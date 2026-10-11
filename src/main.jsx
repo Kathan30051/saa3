@@ -162,7 +162,7 @@ function AudioExperience({ pageProgress, accepted }) {
 
   if (!available) return null;
   return <>
-    <audio ref={audioRef} preload="none" src="/audio/The%20Neighbourhood%20-%20Sweater%20Weather%20(slowed%20+%20reverb)%20-%20Ghosted.mp3" onError={() => setAvailable(false)} />
+    <audio ref={audioRef} preload="none" src={`${import.meta.env.BASE_URL}audio/The%20Neighbourhood%20-%20Sweater%20Weather%20(slowed%20+%20reverb)%20-%20Ghosted.mp3`} onError={() => setAvailable(false)} />
     <button className="sound-toggle" type="button" onClick={toggleSound} aria-label={soundOn ? 'Turn sound off' : 'Turn sound on'} aria-pressed={soundOn}>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d={soundOn ? 'M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11' : 'M16 9l5 6m0-6-5 6'}/></svg>
     </button>
