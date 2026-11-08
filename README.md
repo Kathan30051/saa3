@@ -1,7 +1,7 @@
 # A Little Further, Together
 
-A separate, mobile-first interactive storybook proposal for Saanvi. The existing CRIMSON `../index.html` is preserved as-is.
-
+A separate, mobile-first interactive storybook proposal for Saanvi. The existing CRIMSON `../index.html` is preserved as-is. 
+ 
 ## Run locally
 
 From this directory, run `npm install`, then `npm run dev`. Open the local URL Vite prints (usually `http://localhost:5173/`). The experience is a standalone Vite app and can also be built with `npm run build`; use `npm run preview` to preview the production build.
